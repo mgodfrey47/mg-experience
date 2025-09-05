@@ -1,14 +1,13 @@
-import Image from "next/image";
 import PortfolioItem from '../components/PortfolioItem';
 
 export default function Home() {
   return (
     <>
       <div className="absolute top-[27rem] dotted w-full h-[35rem]"></div>
-      <div className="grid grid-cols-[5rem_1fr_5rem] justify-items-center min-h-screen gap-16 relative">
+      <div className="grid grid-cols-[5rem_1fr_5rem] justify-items-center min-h-screen relative">
       <div className="border-r-9 border-mg-navy h-full w-full"></div>
-      <main className="flex flex-col gap-[32px] items-center text-center w-full">
-        <h1 className="text-[4rem] font-bold mt-32">Hi! I'm Megan Godfrey.</h1>
+      <main className="flex flex-col gap-[32px] items-center text-center w-full px-20">
+        <h1 className="text-[4rem] text-mg-navy font-bold mt-32">Hi! I'm Megan Godfrey.</h1>
         <p className="max-w-[40rem] text-lg">
           I'm a front-end web developer with a background in neuroimaging research.
           I have a passion for translating complex requirements into user-friendly applications.
@@ -16,7 +15,7 @@ export default function Home() {
         <p className="text-lg">
           Here are some examples of projects I’ve worked on...
         </p>
-        <div className="grid grid-cols-3 gap-x-16 gap-y-8 mt-16 mx-4 w-full">
+        <div className="grid grid-cols-3 gap-x-20 gap-y-8 mt-16 w-full">
           <PortfolioItem
             colour="mg-orange"
             title="Concertim"
