@@ -2,7 +2,7 @@
 
 export default function PortfolioItem({item, colourClasses, openModal}) {
   const { title, image, description, contribution, languages, links } = item;
-  const buttonTitle = links.site ? "Visit site" : "View screenshots";
+  const buttonTitle = links.site ? "Visit site" : "View screenshot";
 
   const handleClick = (image) => {
     if (links.site) {
@@ -43,6 +43,7 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
         <a
           href={links.github}
           title={links.github ? "View Github repository" : "Private repository"}
+          target="_blank"
         >
           <img
             src={'github-mark-white.svg'}
