@@ -2,57 +2,19 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-mg-purple grid grid-cols-[5rem_1fr_5rem] items-center justify-items-center min-h-screen gap-16">
-      <div className="border-r-9 border-mg-blue h-full w-full"></div>
-      <main className="flex flex-col gap-[32px] items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly. Poop
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-white text-mg-purple gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <div className="bg-white grid grid-cols-[5rem_1fr_5rem] justify-items-center min-h-screen gap-16">
+      <div className="border-r-9 border-mg-navy h-full w-full"></div>
+      <main className="flex flex-col gap-[32px] items-center text-center">
+        <h1 className="text-[4rem] mt-32">Hi, I'm Megan Godfrey.</h1>
+        <p className="max-w-[40rem]">
+          I'm a front-end web developer with a background in neuroimaging research.
+          I have a passion for translating complex requirements into user-friendly applications.
+        </p>
+        <p>
+          Here are some examples of projects I’ve worked on...
+        </p>
       </main>
-      <div className="border-l-9 border-mg-blue h-full w-full"></div>
+      <div className="border-l-9 border-mg-navy h-full w-full"></div>
     </div>
   );
 }
