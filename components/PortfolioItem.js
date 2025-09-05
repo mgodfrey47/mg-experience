@@ -3,12 +3,22 @@
 export default function PortfolioItem({item, colourClasses, openModal}) {
   const { title, image, description, contribution, languages, links } = item;
 
+  const handleClick = (image) => {
+    if (links.site) {
+      window.open(links.site, '_blank').focus();
+    } else {
+      openModal(image);
+    }
+  }
+
   return (
     <div className={`flex flex-col w-full border-3 border-t-20 ${colourClasses.border} bg-white text-left`}>
       <div className={"p-3"}>
       <img
         src={image}
-        className={`mb-2 border-b-8 ${colourClasses.border}`}
+        className={`mb-2 border-b-8 ${colourClasses.border} cursor-pointer`}
+        onClick={() => handleClick(image)}
+        alt={links.site ? "Visit site" : "View screenshots"}
       />
       <h2 className="text-[1.8rem]">{title}</h2>
       <p className="mb-4">{description}</p>
@@ -21,7 +31,7 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
       <div className={`flex items-center justify-center gap-x-4 ${colourClasses.background} mt-auto p-2`}>
         <button
           className={`border-white text-white`}
-          onClick={() => openModal(image)}
+          onClick={() => handleClick(image)}
         >
           {links.site ? "View site" : "View screenshots"}
         </button>
