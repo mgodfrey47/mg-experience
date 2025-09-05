@@ -1,8 +1,9 @@
-import Image from "next/image";
 
-export default function PortfolioItem({colour, title}) {
+export default function PortfolioItem({borderColour, item}) {
+  const { title, image, description, languages, links } = item;
+
   return (
-    <div className={`w-full h-96 border-3 border-t-20 border-${colour} bg-white text-left p-3`}>
+    <div className={`w-full h-96 border-3 border-t-20 ${borderColour} bg-white text-left p-3`}>
       <img
         src={'openflighthpc.png'}
         className={'mb-2'}

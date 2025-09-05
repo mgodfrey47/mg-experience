@@ -1,6 +1,8 @@
 import PortfolioItem from '../components/PortfolioItem';
+import portfolioItems from "../data/portfolioItems";
 
 export default function Home() {
+
   return (
     <>
       <div className="absolute top-[27rem] dotted w-full h-[35rem]"></div>
@@ -16,26 +18,13 @@ export default function Home() {
           Here are some examples of projects I’ve worked on...
         </p>
         <div className="grid grid-cols-3 gap-x-20 gap-y-8 mt-16 w-full">
-          <PortfolioItem
-            colour="mg-orange"
-            title="Concertim"
-          />
-          <PortfolioItem
-            colour="mg-teal"
-            title="OpenFlightHPC"
-          />
-          <PortfolioItem
-            colour="mg-pink"
-            title="Carbon leaderboard"
-          />
-          <PortfolioItem
-            colour="mg-teal"
-            title="Flight Web Suite"
-          />
-          <PortfolioItem
-            colour="mg-pink"
-            title="OPM data acquisition"
-          />
+          {portfolioItems.map((item) => (
+            <PortfolioItem
+              key={item.id}
+              item={item}
+              borderColour={"border-mg-orange"}
+            />
+          ))}
         </div>
       </main>
       <div className="border-l-9 border-mg-navy h-full w-full"></div>
