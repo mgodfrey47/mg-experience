@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PortfolioItem from '../components/PortfolioItem';
 
 export default function Home() {
   return (
@@ -15,10 +16,27 @@ export default function Home() {
         <p className="text-lg">
           Here are some examples of projects I’ve worked on...
         </p>
-        <div className="grid grid-cols-3 gap-x-16 mt-16 mx-4 h-96 w-full">
-          <div className="w-full h-full border-3 border-mg-orange bg-white"></div>
-          <div className="w-full h-full border-3 border-mg-teal bg-white"></div>
-          <div className="w-full h-full border-3 border-mg-pink bg-white"></div>
+        <div className="grid grid-cols-3 gap-x-16 gap-y-8 mt-16 mx-4 w-full">
+          <PortfolioItem
+            colour="mg-orange"
+            title="Concertim"
+          />
+          <PortfolioItem
+            colour="mg-teal"
+            title="OpenFlightHPC"
+          />
+          <PortfolioItem
+            colour="mg-pink"
+            title="Carbon leaderboard"
+          />
+          <PortfolioItem
+            colour="mg-teal"
+            title="Flight Web Suite"
+          />
+          <PortfolioItem
+            colour="mg-pink"
+            title="OPM data acquisition"
+          />
         </div>
       </main>
       <div className="border-l-9 border-mg-navy h-full w-full"></div>
