@@ -1,4 +1,6 @@
-export default function PortfolioItem({item, colourClasses}) {
+
+
+export default function PortfolioItem({item, colourClasses, openModal}) {
   const { title, image, description, contribution, languages, links } = item;
 
   return (
@@ -17,7 +19,10 @@ export default function PortfolioItem({item, colourClasses}) {
 
       </div>
       <div className={`flex items-center justify-center gap-x-4 ${colourClasses.background} mt-auto p-2`}>
-        <button className={`border-white text-white`}>
+        <button
+          className={`border-white text-white`}
+          onClick={() => openModal(image)}
+        >
           {links.site ? "View site" : "View screenshots"}
         </button>
         <a
@@ -30,6 +35,7 @@ export default function PortfolioItem({item, colourClasses}) {
           />
         </a>
       </div>
+
     </div>
   );
 }

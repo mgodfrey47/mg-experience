@@ -1,12 +1,28 @@
+"use client";
+
+import { useState } from "react";
 import PortfolioItem from '../components/PortfolioItem';
 import portfolioItems from "../data/portfolioItems";
+import Modal from "../components/Modal";
 
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+
   const colours = [
     {border: "border-mg-pink", text: "text-mg-pink", background: "bg-mg-pink"},
     {border: "border-mg-orange", text: "text-mg-orange", background: "bg-mg-orange"},
     {border: "border-mg-teal", text: "text-mg-teal", background: "bg-mg-teal"},
   ]
+
+  const openModal = (imgSrc) => {
+    setModalImage(imgSrc);
+    setModalOpen(true);
+  }
+  const closeModal = () => {
+    setModalOpen(false);
+    setModalImage("");
+  }
 
   return (
     <>
@@ -28,12 +44,16 @@ export default function Home() {
               key={item.id}
               item={item}
               colourClasses={colours[item.id % 3]}
+              openModal={openModal}
             />
           ))}
         </div>
       </main>
       <div className="border-l-9 border-mg-navy h-full w-full"></div>
       </div>
+      <Modal isOpen={modalOpen} onClose={closeModal}>
+        <img src={modalImage} alt="Enlarged image" className="w-full h-auto" />
+      </Modal>
     </>
 
   );
