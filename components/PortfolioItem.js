@@ -10,10 +10,11 @@ export default function PortfolioItem({item, colourClasses}) {
       />
       <h2 className="text-[1.8rem]">{title}</h2>
       <p className="mb-4">{description}</p>
+      <h3 className={colourClasses.text}>Tech stack</h3>
+      <p className="mb-4">{languages}</p>
       <h3 className={colourClasses.text}>My contribution</h3>
-      <p className="mb-4">{contribution}</p>
-      <h3 className={colourClasses.text}>Languages/frameworks</h3>
-      <p className="mb-2">{languages}</p>
+      <p className="mb-2">{contribution}</p>
+
       </div>
       <div className={`flex items-center justify-center ${colourClasses.background} mt-auto p-2`}>
         <button className={`border-white text-white`}>
