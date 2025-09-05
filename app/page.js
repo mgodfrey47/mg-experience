@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="absolute top-[28rem] dotted w-full h-[35rem]"></div>
-      <div className="bg-white grid grid-cols-[5rem_1fr_5rem] justify-items-center min-h-screen gap-16">
+      <div className="absolute top-[27rem] dotted w-full h-[35rem]"></div>
+      <div className="grid grid-cols-[5rem_1fr_5rem] justify-items-center min-h-screen gap-16 relative">
       <div className="border-r-9 border-mg-navy h-full w-full"></div>
-      <main className="flex flex-col gap-[32px] items-center text-center">
+      <main className="flex flex-col gap-[32px] items-center text-center w-full">
         <h1 className="text-[4rem] font-bold mt-32">Hi! I'm Megan Godfrey.</h1>
         <p className="max-w-[40rem] text-lg">
           I'm a front-end web developer with a background in neuroimaging research.
@@ -15,7 +15,11 @@ export default function Home() {
         <p className="text-lg">
           Here are some examples of projects I’ve worked on...
         </p>
-
+        <div className="grid grid-cols-3 gap-x-16 mt-16 mx-4 h-96 w-full">
+          <div className="w-full h-full border-3 border-mg-orange bg-white"></div>
+          <div className="w-full h-full border-3 border-mg-teal bg-white"></div>
+          <div className="w-full h-full border-3 border-mg-pink bg-white"></div>
+        </div>
       </main>
       <div className="border-l-9 border-mg-navy h-full w-full"></div>
       </div>

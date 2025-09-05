@@ -8,8 +8,10 @@
 
 @theme {
   --color-mg-purple: #271033;
-  --color-mg-blue: #388697;
   --color-mg-navy: #32668F;
+  --color-mg-orange: #FA8334;
+  --color-mg-teal: #388697;
+  --color-mg-pink: #AD56AB;
   --font-sans: var(--font-lexend);
 }
 
