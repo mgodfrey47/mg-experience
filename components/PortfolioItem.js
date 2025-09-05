@@ -18,7 +18,7 @@ export default function PortfolioItem({item, colourClasses}) {
       </div>
       <div className={`flex items-center justify-center gap-x-4 ${colourClasses.background} mt-auto p-2`}>
         <button className={`border-white text-white`}>
-          View site
+          {links.site ? "View site" : "View screenshots"}
         </button>
         <a
           href={links.github}
