@@ -2,6 +2,11 @@ import PortfolioItem from '../components/PortfolioItem';
 import portfolioItems from "../data/portfolioItems";
 
 export default function Home() {
+  const colours = [
+    {border: "border-mg-pink", text: "text-mg-pink", background: "bg-mg-pink"},
+    {border: "border-mg-orange", text: "text-mg-orange", background: "bg-mg-orange"},
+    {border: "border-mg-teal", text: "text-mg-teal", background: "bg-mg-teal"},
+  ]
 
   return (
     <>
@@ -17,12 +22,12 @@ export default function Home() {
         <p className="text-lg">
           Here are some examples of projects I’ve worked on...
         </p>
-        <div className="grid grid-cols-3 gap-x-20 gap-y-8 mt-16 w-full">
+        <div className="grid grid-cols-3 gap-x-20 gap-y-8 my-16 w-full">
           {portfolioItems.map((item) => (
             <PortfolioItem
               key={item.id}
               item={item}
-              borderColour={"border-mg-orange"}
+              colourClasses={colours[item.id % 3]}
             />
           ))}
         </div>
