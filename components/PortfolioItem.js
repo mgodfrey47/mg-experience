@@ -22,6 +22,7 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
         <img
           src={'pr.svg'}
           className={`size-8`}
+          alt=""
         />
       </a>
     }
@@ -50,7 +51,10 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
       </div>
       <div className={`flex items-center justify-center gap-x-4 ${colourClasses.background} mt-auto p-2`}>
         <button
-          className={`border-white text-white border-2 px-5 py-1 cursor-pointer font-normal`}
+          className={`
+            border-white text-white border-2 px-5 py-1 cursor-pointer font-normal 
+            ${colourClasses.background} hover:brightness-125 transition
+          `}
           onClick={() => handleClick(image)}
         >
           {buttonTitle}
@@ -63,6 +67,7 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
           <img
             src={'github-mark-white.svg'}
             className={`size-8 ${links.github ? "" : "opacity-50"}`}
+            alt=""
           />
         </a>
         <PRLink/>
