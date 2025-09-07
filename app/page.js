@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="absolute top-[27rem] dotted w-full h-[35rem]"></div>
+      <div className="fixed top-[27rem] dotted w-full h-[35rem]"></div>
       <div className="grid grid-cols-[5rem_1fr_5rem] justify-items-center min-h-screen relative">
       <div className="border-r-9 border-mg-navy h-full w-full"></div>
       <main className="flex flex-col gap-[32px] items-center text-center w-full px-20">
