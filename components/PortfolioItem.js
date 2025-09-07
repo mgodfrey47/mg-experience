@@ -12,6 +12,21 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
     }
   }
 
+  const PRLink = () => {
+    if (links.pr) {
+      return <a
+        href={links.pr}
+        title="View PR raised by me"
+        target="_blank"
+      >
+        <img
+          src={'pr.svg'}
+          className={`size-8`}
+        />
+      </a>
+    }
+  }
+
   return (
     <div className={`flex flex-col w-full border-3 border-t-20 ${colourClasses.border} bg-white text-left`}>
       <div className={"p-3"}>
@@ -50,8 +65,8 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
             className={`size-8 ${links.github ? "" : "opacity-50"}`}
           />
         </a>
+        <PRLink/>
       </div>
-
     </div>
   );
 }
