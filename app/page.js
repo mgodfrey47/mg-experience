@@ -10,9 +10,9 @@ export default function Home() {
   const [modalImage, setModalImage] = useState("");
 
   const colours = [
-    {border: "border-mg-pink", text: "text-mg-pink", background: "bg-mg-pink"},
     {border: "border-mg-orange", text: "text-mg-orange", background: "bg-mg-orange"},
     {border: "border-mg-teal", text: "text-mg-teal", background: "bg-mg-teal"},
+    {border: "border-mg-pink", text: "text-mg-pink", background: "bg-mg-pink"},
   ]
 
   const openModal = (imgSrc) => {
@@ -39,11 +39,11 @@ export default function Home() {
           Here are some examples of projects I’ve worked on...
         </p>
         <div className="grid grid-cols-3 gap-x-20 gap-y-8 my-16 w-full">
-          {portfolioItems.map((item) => (
+          {portfolioItems.map((item, index) => (
             <PortfolioItem
               key={item.id}
               item={item}
-              colourClasses={colours[item.id % 3]}
+              colourClasses={colours[(index + Math.floor(index/3)) % 3]}
               openModal={openModal}
             />
           ))}
