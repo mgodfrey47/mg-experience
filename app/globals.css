@@ -14,7 +14,6 @@
   --color-mg-teal: #388697;
   --color-mg-pink: #AD56AB;
   --color-mg-text: #0E1633;
-  --font-sans: var(--font-lexend);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,8 +31,4 @@
 
 h3 {
   font-weight: bold
-}
-
-.button {
-  @apply
 }

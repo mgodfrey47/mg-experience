@@ -44,9 +44,9 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
         </button>
         <h2 className="text-[1.8rem]">{title}</h2>
         <p className="mb-4">{description}</p>
-        <h3 className={colourClasses.text}>Tech stack</h3>
+        <h3 className={`${colourClasses.text} temp`}>Tech stack</h3>
         <p className="mb-4">{languages}</p>
-        <h3 className={colourClasses.text}>My contribution</h3>
+        <h3 className={`${colourClasses.text} temp`}>My contribution</h3>
         <p className="mb-2">{contribution}</p>
       </div>
       <div className={`flex items-center justify-center gap-x-4 ${colourClasses.background} mt-auto p-2`}>
@@ -66,7 +66,7 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
         >
           <img
             src={'github-mark-white.svg'}
-            className={`size-8 ${links.github ? "" : "opacity-50"}`}
+            className={`size-8 ${links.github ? "opacity-100" : "opacity-50"}`}
             alt=""
           />
         </a>
