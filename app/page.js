@@ -32,7 +32,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] items-center text-center w-full px-4 md:px-8 2xl:px-20">
         <h1 className="text-[2rem] sm:text-[3rem] lg:text-[4rem] text-mg-navy font-bold mt-14 md:mt-32">Hi! I&apos;m Megan Godfrey.</h1>
         <p className="max-w-[40rem] text-lg">
-          I&apos;m a front-end web developer with a background in neuroimaging research, and experience in translating
+          I&apos;m a front-end web developer with a background in neuroimaging research, experienced in translating
           complex technical requirements into user-friendly applications.
         </p>
         <p className="text-lg">
