@@ -3,7 +3,7 @@ const portfolioItems = [
     id: 1,
     title: "Concertim",
     image: "concertim.png",
-    description: "HPC management site with interactive 3D server rack visualisations.",
+    description: "HPC management web application with interactive 3D server rack visualisations.",
     contribution: `
       Responsible for interface design. Worked with a small team to implement,
       where I concentrated on front-end features.
@@ -28,7 +28,7 @@ const portfolioItems = [
     id: 3,
     title: "Carbon leaderboard",
     image: "carbon_leaderboard.png",
-    description: "Website that ranks the environmental impact of real servers.",
+    description: "Website that ranks the carbon emissions of real servers.",
     contribution: `
       Most interface design and front-end implementation, including the front page and data entry instructions.
     `,
@@ -43,7 +43,7 @@ const portfolioItems = [
     id: 4,
     title: "Flight Web Suite redesign",
     image: "flight_web_suite.png",
-    description: "UX revamp of application suite that allows connecting to HPC systems in browser.",
+    description: "UX revamp of application suite for connecting to HPC systems via web browser.",
     contribution: `
       Interface redesign and implementation. Graphic design.
     `,
@@ -57,7 +57,7 @@ const portfolioItems = [
     id: 5,
     title: "OPM data acquisition",
     image: "opm_data_acquisition.png",
-    description: "GUI for viewing and recording data from functional neuroimaging sensors.",
+    description: "Real-time visualisation and acquisition software for functional neuroimaging sensor data.",
     contribution: `
       Interface design and implementation.
     `,
