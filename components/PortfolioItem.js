@@ -32,7 +32,7 @@ export default function PortfolioItem({item, colourClasses, openModal}) {
     <div className={`flex flex-col w-full border-3 border-t-20 ${colourClasses.border} bg-white text-left`}>
       <div className={"p-3"}>
         <button
-          className={`mb-2 border-b-8 ${colourClasses.border} cursor-pointer`}
+          className={`mb-2 border-2 border-b-8 ${colourClasses.border} cursor-pointer`}
           onClick={() => handleClick(image)}
           title={buttonTitle}
         >
