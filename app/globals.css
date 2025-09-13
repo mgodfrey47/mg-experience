@@ -25,8 +25,8 @@
 
 .dotted {
   background-image: radial-gradient(circle 2px, var(--mg-navy) 2px, transparent 0);
-  background-size: 25px 25px;
-  opacity: 50%;
+  background-size: 24px 24px;
+  opacity: 30%;
 }
 
 h3 {

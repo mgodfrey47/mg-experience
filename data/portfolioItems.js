@@ -2,8 +2,8 @@ const portfolioItems = [
   {
     id: 1,
     title: "Concertim",
-    image: "carbon_leaderboard.png",
-    description: "HPC management site with server rack visualisations.",
+    image: "concertim.png",
+    description: "HPC management web application with interactive 3D server rack visualisations.",
     contribution: `
       Responsible for interface design. Worked with a small team to implement,
       where I concentrated on front-end features.
@@ -28,7 +28,7 @@ const portfolioItems = [
     id: 3,
     title: "Carbon leaderboard",
     image: "carbon_leaderboard.png",
-    description: "Website that shows the relative environmental impact of servers.",
+    description: "Website that ranks the carbon emissions of real servers.",
     contribution: `
       Most interface design and front-end implementation, including the front page and data entry instructions.
     `,
@@ -43,7 +43,7 @@ const portfolioItems = [
     id: 4,
     title: "Flight Web Suite redesign",
     image: "flight_web_suite.png",
-    description: "UX revamp of application suite that allows connecting to HPC systems in browser.",
+    description: "UX revamp of application suite for connecting to HPC systems via web browser.",
     contribution: `
       Interface redesign and implementation. Graphic design.
     `,
@@ -57,13 +57,27 @@ const portfolioItems = [
     id: 5,
     title: "OPM data acquisition",
     image: "opm_data_acquisition.png",
-    description: "GUI for viewing and recording data from functional neuroimaging sensors.",
+    description: "Real-time visualisation and acquisition software for functional neuroimaging sensor data.",
     contribution: `
       Interface design and implementation.
     `,
     languages: "MATLAB",
     links: {
       github: "https://github.com/mgodfrey47/opm-data-acquisition",
+    },
+  },
+  {
+    id: 6,
+    title: "Portfolio website",
+    image: "portfolio.png",
+    description: "This very website, showing a portfolio of my software development experience.",
+    contribution: `
+      Design and implementation.
+    `,
+    languages: "Next.js, React",
+    links: {
+      site: "https://mg-experience.vercel.app/",
+      github: "https://github.com/mgodfrey47/mg-experience",
     },
   },
 ];
