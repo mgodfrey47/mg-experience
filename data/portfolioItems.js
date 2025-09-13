@@ -66,6 +66,20 @@ const portfolioItems = [
       github: "https://github.com/mgodfrey47/opm-data-acquisition",
     },
   },
+  {
+    id: 6,
+    title: "Portfolio website",
+    image: "carbon_leaderboard.png",
+    description: "This very website, showing a portfolio of my software development experience.",
+    contribution: `
+      Design and implementation.
+    `,
+    languages: "Next.js, React",
+    links: {
+      site: "https://mg-experience.vercel.app/",
+      github: "https://github.com/mgodfrey47/mg-experience",
+    },
+  },
 ];
 
 export default portfolioItems;
