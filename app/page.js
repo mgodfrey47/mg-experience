@@ -52,7 +52,7 @@ export default function Home() {
       <div className="border-l-9 border-mg-navy h-full w-full"></div>
       </div>
       <Modal isOpen={modalOpen} onClose={closeModal}>
-        <img src={modalImage} alt="Enlarged image" className="w-full h-auto" />
+        <img src={modalImage} alt="Enlarged image" className="max-w-full max-h-[calc(100vh-3rem)] object-contain" />
       </Modal>
     </>
 
