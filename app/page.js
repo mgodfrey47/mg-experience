@@ -38,7 +38,7 @@ export default function Home() {
         <p className="text-lg">
           Here are some examples of projects I’ve worked on...
         </p>
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-x-10 2xl:gap-x-20 gap-y-8 my-4 md:my-16 w-full">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-x-10 2xl:gap-x-20 gap-y-8 my-4 md:my-12 w-full">
           {portfolioItems.map((item, index) => (
             <PortfolioItem
               key={item.id}
